@@ -6,7 +6,7 @@
 	</head>
 	<body>
 		<?php 
-			echo "blog works!!!";
+			require_once(__DIR__ . "/controller/create-db.php");
 		 ?>
 	</body>
 </html>
