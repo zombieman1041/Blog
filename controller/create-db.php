@@ -5,8 +5,8 @@
 		die("Error: " . $connection->connect_error);	// if there is an error the program will die
 	}
 	$exists = $connection->select_db($database); 		//selects the database and checks if it exists
-	if (!$exists) {
-		$query = $connection->query("CREATE DATABASE $database");
+	if (!$exists) {										
+		$query = $connection->query("CREATE DATABASE $database"); //creates a database by query
 
 		if ($query) {
 			echo "Successfully created database: " . $database;
