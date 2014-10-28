@@ -6,13 +6,13 @@
 	}
 	$exists = $connection->select_db($database); 		//selects the database and checks if it exists
 	if (!$exists) {										
-		$query = $connection->query("CREATE DATABASE $database"); //creates a database by query
+		$query = $connection->query("CREATE DATABASE $database"); //creates a database by query called blog_db NOTE: action words are in uppercase
 
-		if ($query) {
+		if ($query) {											//outputs a statement that the query was true
 			echo "Successfully created database: " . $database;
 		}
 	}
-	else {
+	else {												// Outputs that the database already exists
 		echo "database already exists.";
 	}
 
