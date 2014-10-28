@@ -14,5 +14,12 @@
 	else {												// Outputs that the database already exists
 		echo "database already exists.";
 	}
+
+	$query = $connection->query("CREATE TABLE posts ("  //creates a table by query
+
+	. "id int(11) NOT NULL AUTO_INCREMENT,"
+	. "title varchar(255) NOT NULL,"
+	. "post text NOT NULL,"
+	. "PRIMARY KEY(id))");	
 	$connection->close();							//closes connection 
 ?>
