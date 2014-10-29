@@ -24,7 +24,7 @@
 	
 	if ($query) {									// checks to see if this statement exists
 		# code...
-		echo "Successfully created table: posts";   // lets you know that it succesfully created table:posts
+		echo "<p>Successfully created table: posts</p>";   // lets you know that it succesfully created table:posts
 	}
 	else{
 		echo "<p>$connection->error</p>";			//lets you know that table:posts already exists
