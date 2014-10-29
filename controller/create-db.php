@@ -22,12 +22,12 @@
 	. "post text NOT NULL,"								//creates a collumn for text that cannot be empty
 	. "PRIMARY KEY(id))");							// allows the tables to be connected and is shown that it is connected by an id
 	
-	if ($query) {
+	if ($query) {									// checks to see if this statement exists
 		# code...
-		echo "Successfully created table: posts";
+		echo "Successfully created table: posts";   // lets you know that it succesfully created table:posts
 	}
 	else{
-		echo "<p>$connection->error</p>";
+		echo "<p>$connection->error</p>";			//lets you know that table:posts already exists
 	}
 	$connection->close();							//closes connection 
 ?>
