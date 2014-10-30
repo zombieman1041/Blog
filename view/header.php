@@ -1,4 +1,4 @@
-<html>
+<html> <!-- the reason for this is so that it is easier to maintain -->
 	<head>
 		<!-- bootstrap -->
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
