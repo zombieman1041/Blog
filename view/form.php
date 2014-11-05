@@ -1,6 +1,9 @@
+<?php
+	require_once(__DIR__ . "/../model/config.php");//executes file from here and concatentates the directory from here
+?>
 	<h1>Create Blog Post</h1>
 
-	<form>
+	<form method="post" action="">
 		<div> <!-- title -->
 			<label for="title">Title: </label>
 			<input type="text" name="title" />
@@ -10,6 +13,6 @@
 			<textarea name="post"></textarea>
 		</div>
 		<div>
-			<button type="submit">Submit</button>
+			<button type="submit">Submit</button> <!-- Button that sends data given on code above to a file -->
 		</div>
 	</form>
