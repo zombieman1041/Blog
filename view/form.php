@@ -3,7 +3,7 @@
 ?>
 	<h1>Create Blog Post</h1>
 
-	<form method="post" action="">
+	<form method="post" action="<?php echo $path . "controller/create-post.php"?>">
 		<div> <!-- title -->
 			<label for="title">Title: </label>
 			<input type="text" name="title" />
