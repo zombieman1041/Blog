@@ -2,3 +2,10 @@ body{
 	font-family: 'Oswald', sans-serif;
 	font-size: 25px;
 }
+
+@media (max-width: 320px){		/*Iphone Responsive*/
+html {background-color: green;}
+}
+@media (min-width: 1024px){		/*Ipad Responsive*/
+html {background-color: red;}
+}
