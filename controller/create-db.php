@@ -1,5 +1,5 @@
 <?php
-	require_once(__DIR__ . "/../model/database.php"); // brings info from database.php to this file and concatentates the directory from here
+	require_once(__DIR__ . "/../model/config.php"); // brings info from config.php to this file and concatentates the directory from here
 	$connection = new mysqli($host, $username, $password); //used to access the database on the sqli server
 	if($connection->connect_error){						// checks to see if the connection has an error
 		die("Error: " . $connection->connect_error);	// if there is an error the program will die
