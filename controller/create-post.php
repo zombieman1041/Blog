@@ -6,13 +6,13 @@
 	$title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING); //filters the input of the title and sanitizes from title
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);	////filters the input of the post and sanitizes from post
 
-	$query = $connection->query("INSERT INTO posts SET title = '$title', post = '$post'");
-	if ($query) {
+	$query = $connection->query("INSERT INTO posts SET title = '$title', post = '$post'"); //creates a table by query
+	if ($query) {	// checks to see if this statement exists
 		# code...
-		echo "<p>Successfully inserted post: $title</p>";
+		echo "<p>Successfully inserted post: $title</p>"; // lets you know that it succesfully created your post
 	}
 	else{
-		echo "<p>$connection->error</p>";
+		echo "<p>$connection->error</p>"; //lets you know that table:posts already exists
 	}
 	
-	$connection->close();
+	$connection->close(); //closes connection 
