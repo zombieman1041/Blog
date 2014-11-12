@@ -6,7 +6,7 @@
 	$title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING); //filters the input of the title and sanitizes from title
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);	////filters the input of the post and sanitizes from post
 
-	$query = $connection->query("INSERT INTO posts SET title = '$title', post = '$post'")
+	$query = $connection->query("INSERT INTO posts SET title = '$title', post = '$post'");
 	if ($query) {
 		# code...
 		echo "<p>Successfully inserted post: $title</p>";
