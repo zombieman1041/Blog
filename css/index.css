@@ -2,7 +2,7 @@ body{
 	font-family: 'Oswald', sans-serif;
 	font-size: 25px;
 	background-image: url("evil.jpg");
-	color: white;
+	color: gray;
 }
 
 @media (max-width: 320px){		/*Iphone Responsive*/
