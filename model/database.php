@@ -6,7 +6,7 @@ class Database { //class Database is more efficient because instead of using dif
 	private $password;
 	private $database;
 
-	public function __construct($host, $username, $password, $database) {		
+	public function __construct($host, $username, $password, $database) {		// The construct function is used so that whatever is in this function it will create an object for each variable
 		$this->host = $host;
 		$this->username = $username;
 		$this->password = $password;
