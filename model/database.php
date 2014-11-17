@@ -14,10 +14,18 @@ class Database { //class Database is more efficient because instead of using dif
 	}
 	// These functions within our class are used to open connections
 	public function openConnection(){
+		$this->connection = new mysqli($this->host, $this->username, $this->password, $this->database); //used to access the database on the sqli server
+		
+		if($this->connection->connect_error){						// checks to see if the connection has an error
+			die("Error: " . $this->connection->connect_error);	// if there is an error the program will die
+		}
 
 	}//These functions are used to close connections 
 	public function closeConnection(){
-
+		if (isset($this->connection)) {
+			# code...
+			$this->connection->close(); //closes connection 
+		}
 	} //these functions are used to request
 	public function query($string){	
 
