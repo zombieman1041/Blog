@@ -17,7 +17,7 @@ class Database { //class Database is more efficient because instead of using dif
 		if($this->connection->connect_error){						// checks to see if the connection has an error
 			die("Error: " . $this->connection->connect_error);	// if there is an error the program will die
 		}
-		$exists = $connection->select_db($database); 		//selects the database and checks if it exists
+		$exists = $this->connection->select_db($database); 		//selects the database and checks if it exists
 		if (!$exists) {										
 			$query = $this->connection->query("CREATE DATABASE $database"); //creates a database by query called blog_db NOTE: action words are in uppercase
 			if ($query) {											//outputs a statement that the query was true
