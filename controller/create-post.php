@@ -1,6 +1,6 @@
 <?php
 	require_once(__DIR__ . "/../model/config.php"); // brings info from config.php to this file and concatentates the directory from here
-	
+	require_once(__DIR__ . "/../model/date.php"); // brings info from date.php to this file and concatentates the directory from here
 	
 	$title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING); //filters the input of the title and sanitizes from title
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);	////filters the input of the post and sanitizes from post
