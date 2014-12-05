@@ -6,6 +6,7 @@
 	. "id int(11) NOT NULL AUTO_INCREMENT,"				// creates unique ids for the server and cannot be empty and handles the ids for us 
 	. "title varchar(255) NOT NULL,"					// creates a collumn for a title with a max length of 255 characters and it cant be empty
 	. "post text NOT NULL,"								//creates a collumn for text that cannot be empty
+	. "DateTime datetime NOT NULL ,"				//creates a collumn for the datetime that cant be empty(var)
 	. "PRIMARY KEY(id))");							// allows the tables to be connected and is shown that it is connected by an id
 	
 	if ($query) {									// checks to see if this statement exists
