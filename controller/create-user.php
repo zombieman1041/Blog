@@ -9,11 +9,11 @@
 
 	$hashedPassword = crypt($password, $salt); //runs the crypt function which will pass in the password variable and to use the salt for a encrypted password
 
-	$query = $_SESSION["connection"]->query("INSERT INTO users SET "
+	$query = $_SESSION["connection"]->query("INSERT INTO users SET "//creates a table by query that sets email username password(as a hashed password) and salt
 	. "email = '$email',"
 	. "username = '$username',"
 	. "password = '$hashedPassword',"
-	. "salt = '$salt'"); //creates a table by query that sets email username password(as a hashed password) and salt
+	. "salt = '$salt'"); 
 
 	if ($query) {
 		# code...
