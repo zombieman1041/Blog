@@ -1,6 +1,7 @@
 <?php
 	require_once(__DIR__ . "/database.php"); // brings info from config.php to this file and concatentates the directory from here
  	session_start();
+ 	session_regenerate_id(true); //everytime it is called it regenerates the id and uses the original session and creates a new session
 
  	//creates a path to /blog/
 	$path = "/blog/";
