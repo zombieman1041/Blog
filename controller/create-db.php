@@ -14,7 +14,7 @@
 		echo "<p>Successfully created table: posts</p>";   // lets you know that it succesfully created table:posts
 	}
 	else{
-		echo "<p>" . $_SESSION["connection"]->error . "</p>";			//lets you know that table:posts already exists
+		// echo "<p>" . $_SESSION["connection"]->error . "</p>";			//lets you know that table:posts already exists
 	}
 
 	$query = $_SESSION["connection"]->query("CREATE TABLE users ("  //creates a table by query
@@ -30,6 +30,6 @@
 		echo "<p>Successfully created table: users</p>";   // lets you know that it succesfully created table:posts
 	}
 	else{
-		echo "<p>" . $_SESSION["connection"]->error . "</p>";			//lets you know that table:posts already exists
+		// echo "<p>" . $_SESSION["connection"]->error . "</p>";			//lets you know that table:posts already exists
 	}	
 ?>

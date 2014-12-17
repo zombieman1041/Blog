@@ -24,9 +24,9 @@ class Database { //class Database is more efficient because instead of using dif
 				echo "Successfully created database: " . $database;
 			}
 		}
-		else {												// Outputs that the database already exists
-			echo "database already exists.";
-		}	
+		// else {												// Outputs that the database already exists
+		// 	echo "database already exists.";
+		// }	
 	}
 	// This function within our class is used to open connections. Functions are used to cause actions within our class
 	public function openConnection(){

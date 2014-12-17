@@ -8,11 +8,14 @@
 
 	if($result){
 		while($row = mysqli_fetch_array($result)){
+
+
 			echo "<p>Posted on: </p>" . $date->format("m/d/y") . " at " . $time->format("g:i"); // lets you know that it succesfully created the date	
-			echo "<div class='post'>";	//echos the post to the screen
+			
+			echo "<div class='content-box'>";	//echos the post to the screen
 			echo "<h2>" . $row['title'] . "</h2>";
-			echo "<p>" . $row['post'] . "</h1>";
+			echo "<p>" . $row['post'] . "</p>";
 			echo "<br/>";
-			echo "</div";
+			echo "</div>";
 		}
 	}

@@ -2,7 +2,7 @@
 	<head>
 		<!-- bootstrap -->
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
 		<!-- mediaquery -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Cascading Style Sheets -->
@@ -14,3 +14,12 @@
 		</title>
 	</head>
 	<body>
+		<header class='head'> Welcome to anti-facebook! </header>
+		<nav class="navbar navbar-default navbar-inverse" role="navigation">
+ 			<div class="container">
+ 				<a class="list-group-item" href="index	.php">Home</a>
+    			<a class="list-group-item" href="login.php">Login</a>
+				<a class="list-group-item" href="register.php">Register</a>
+				<a class="list-group-item" href="controller/logout-user.php">Logout</a>
+  			</div>
+		</nav>
